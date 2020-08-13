@@ -3,12 +3,13 @@
 }
 
 #page-landing {
-    background: rgb(113, 42, 194)
+    background: rgb(102, 57, 187)
 
 }
 
+
 #page-landing #container  {
-    color: #9C98A6;
+    color: #fffefe;
 }
 
 .logo-container {
@@ -24,14 +25,14 @@
 }
 
 .logo-container img {
-	height: 100px;
+    height: 105px;
 	
 }
 
 .barber-img {
     width: 100%;
     margin-right: 55rem;
-    margin-top: 10px;
+    margin-top: 10px;   
 }
 
 /* botões */
@@ -55,7 +56,7 @@
     justify-content: center;
 
     text-decoration: none;
-    color: white;
+    color: rgb(216, 210, 210);
     transition: background 0.9s
 }
 
@@ -65,7 +66,7 @@
 }
 
 .buttons-container a.agendar {
-    background: #648fdf
+    background: #6466df
 }
 
 .buttons-container a.agendar:hover {
@@ -73,7 +74,7 @@
 }
 
 .buttons-container a.encontrar {
-    background: #03e468;
+    background: #05be59;
     margin-right: 0;
  
 
@@ -94,7 +95,7 @@
     #page-landing #container {
         max-width: 1100px;
         display: grid;
-        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: 190px 1fr;
         grid-template-areas:
         "barber image image"
