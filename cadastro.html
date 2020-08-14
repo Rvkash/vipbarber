@@ -31,7 +31,7 @@
 
                 <div class="header-content">
                     <strong>Faça o cadastro na plataforma</strong> </br>
-                    <p>preencha o formulario de cadastro</p>
+                    <p>Preencha o formulario de cadastro</p>
 
             </header>
 
@@ -71,16 +71,57 @@
                                 <option value="2">Corte Feminino</option>
                                 <option value="3">Masculino e Feminino</option>
                             </select>
+
+
+                            <div class="input-block">
+                                <label for="cost">Custo do corte <small>R$</small></label>
+                                <input type="cost" id="cost" type="number">
+                            </div>
+                        </fieldset>
                     </div>
 
-                    <div class="input-block">
-                        <label for="cost">Custo do corte <small>R$</small></label>
-                        <input type="cost" id="cost" type="number" required>
-                    </div>
+
+                    <fieldset id="schedule-items">
+                        <legend>Hórarios disponiveis
+                            <button id="add-time">+ Novo hórario</button>
+                        </legend>
+                        <div class="schedule-item">
+                            <div class="select-block">
+                                <label for="weekday">Dia da semana</label>
+                                <select name="weekday[]" required>
+                                    <option value="0">Domingo</option>
+                                    <option value="1">Segunda-feira</option>
+                                    <option value="2">Terça-feira</option>
+                                    <option value="3">Quarta-feira</option>
+                                    <option value="4">Quinta-feira</option>
+                                    <option value="5">Sexta-feira</option>
+                                    <option value="6">Sábado</option>
+                                </select>
+                            </div>
+
+                            <div class="input-block">
+                                <label for="time_from">Das</label>
+                                <input type="time" id="time_from" name="time_from[]" required>
+                            </div>
+
+                            <div class="input-block">
+                                <label for="time_to">Até</label>
+                                <input type="time" id="time_from" name="time_from[]" required>
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
+
+                <footer>
+                    <p><img src="/assets/warning.svg" alt="Aviso">
+                        Importante! </br> Preencha todos dados
+                    </p>
+                    <button type="submit" form="create-class">Salvar</button>
+                </footer>
             </main>
         </div>
     </body>
+
+    <script src="/public/scripts/main.js"></script>
 
     </html>
