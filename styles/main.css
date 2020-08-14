@@ -1,5 +1,5 @@
 :root {
-    font-size: 60%
+    font-size: 100%
 }
 
 * {
@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    background-color: azure;
+    background-color: rgb(247, 253, 253);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,7 @@ button,
 textarea {
     font-weight: 500;
     font-family: Poppins;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
 
 }
 
