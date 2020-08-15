@@ -1,0 +1,48 @@
+:root {
+    font-size: 100%
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh; /* altura */
+}
+
+body {
+    background-color: rgb(247, 253, 253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+body,
+input,
+button,
+textarea {
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 2.4rem;
+
+}
+
+
+
+#container {
+    width: 90vw; /* largura */
+    max-width: 700px;
+
+   
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
+
