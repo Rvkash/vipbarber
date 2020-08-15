@@ -1,6 +1,6 @@
-<h1 align="center">
+<p align="center">
     <img src="public/assets/img.svg" width="400px">
-</h1>
+</p>
 
 <h1 align="center">
     Vip Barber
