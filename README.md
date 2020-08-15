@@ -19,15 +19,6 @@ O projeto está desenvolvido utilizando as seguintes tecnologias:
 - Nunjucks 
 - SQLite 
 
-## ⌨ Como executar o projeto
-```bash
-# Clonar o repositório
-git clone https://github.com/guilhermecapitao/proffy-discovery
-# Entrar no diretório
-cd proffy-discovery
-# Baixar as dependências
-npm i
-# Executar o servidor
-npm run dev
-```
+
+
 Feito com :blue_heart: por [Rafael Linhares](https://www.linkedin.com/in/rafael-linhares-js/)
