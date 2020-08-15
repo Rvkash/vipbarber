@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-    Vip Barber
+    Vip Barber - Em Desenvolvimento
 </h1>
 
 
