@@ -8,8 +8,7 @@
 
 
 ## 📖 Sobre 
-Este é um projeto pessoal para estudos e fixamento de conteúdo, um controle de barbearia aonde barbeiros podem se cadastrar na plataforma para alcançar clientes e ter um contato mais pessoal.
-
+Este é um projeto pessoal para estudos e fixamento de conteúdo, um controle de barbearia aonde barbeiros podem se cadastrar na plataforma para alcançar clientes.
 ## 🚀 Tecnologias utilizadas
 O projeto está desenvolvido utilizando as seguintes tecnologias:
 - HTML
