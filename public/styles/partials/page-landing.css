@@ -3,18 +3,17 @@
 }
 
 #page-landing {
-    background: rgb(102, 57, 187)
-
+    background: rgb(103, 37, 190)
 }
 
 
-#page-landing #container  {
+#page-landing #container {
     color: #fffefe;
 }
 
 .logo-container {
     text-align: center;
-    margin: 3.4rem;
+    margin: 4rem;
 }
 
 .logo-container h2 {
@@ -25,14 +24,12 @@
 }
 
 .logo-container img {
-    height: 105px;
-	
+    height: 100px;
+
 }
 
 .barber-img {
-    width: 100%;
-    margin-right: 55rem;
-    margin-top: 10px;   
+    width: 90%;
 }
 
 /* botões */
@@ -61,7 +58,7 @@
 }
 
 .buttons-container a img {
-    width: 4rem;
+    width: 3rem;
     margin-right: 2.4rem;
 }
 
@@ -73,13 +70,13 @@
     background: #8ab0f7;
     transform: scale(1.05);
     border: 2px solid #7159c1;
-    
+
 }
 
 .buttons-container a.encontrar {
     background: #05be59;
     margin-right: 0;
- 
+
 
 }
 
@@ -89,6 +86,7 @@
     border: 2px solid #7159c1;
 
 }
+
 
 @media (max-width: 699px) {
     :root {
@@ -101,33 +99,39 @@
     #page-landing #container {
         max-width: 1100px;
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: 190px 1fr;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 240px 1fr;
         grid-template-areas:
-        "barber image image"
-        "button button texting";
+            "barber image image"
+            "button button text";
         gap: 60px;
 
     }
 
     .logo-container {
         grid-area: barber;
-        text-align: initial;
-         align-self: center
-
+        text-align: center;
+        align-self: center
     }
+
     .barber-img {
         grid-area: image;
     }
+
     .buttons-container {
         grid-area: button;
-        justify-content: flex-start
+        justify-content: flex-start;
+
+    }
+
+    .buttons-container a img {
+        color: white;
+        width: 20px;
     }
 
     .footer {
         grid-area: texting;
-        justify-self: end;
+        justify-self: bottom;
     }
 
 }
-
