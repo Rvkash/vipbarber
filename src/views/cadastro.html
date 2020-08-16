@@ -59,18 +59,18 @@
                             <label for="bio">Seu status</label>
                             <textarea name="bio" id="bio" required></textarea>
                         </div>
-
                     </fieldset>
 
                     <div class="select-block">
                         <fieldset>
-                            <legend>Sua especialização</legend>
+                              <label for="subject">Especialização</label>
                             <select name="subject" id="subject" required>
-                                <option value="Selecione uma opção"></option>
-                                <option value="1">Corte Masculino</option>
-                                <option value="2">Corte Feminino</option>
-                                <option value="3">Masculino e Feminino</option>
+                                {% for subject in subjects %}
+                                <option value="{{loop.index}}"> 
+                                 {{subject}}
+                                {% endfor %}
                             </select>
+                    
 
 
                             <div class="input-block">
@@ -89,6 +89,13 @@
                             <div class="select-block">
                                 <label for="weekday">Dia da semana</label>
                                 <select name="weekday[]" required>
+
+                                    {% for weekday in weekdays %}
+                                    <option value="{{loop.index0}}">
+                                     {{weekday}}
+                                    {% endfor %}
+                                    </option>
+
                                     <option value="0">Domingo</option>
                                     <option value="1">Segunda-feira</option>
                                     <option value="2">Terça-feira</option>
