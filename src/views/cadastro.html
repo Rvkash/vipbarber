@@ -10,10 +10,6 @@
         <link rel="stylesheet" href="styles/partials/header.css">
         <link rel="stylesheet" href="styles/partials/cadastro.css">
         <link rel="stylesheet" href="styles/partials/forms.css">
-
-
-
-
         <link
             href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
             rel="stylesheet">
@@ -32,11 +28,10 @@
                 <div class="header-content">
                     <strong>Faça o cadastro na plataforma</strong> </br>
                     <p>Preencha o formulario de cadastro</p>
-
             </header>
 
             <main>
-                <form action="" id="create-class">
+                <form action="/save-classes" id="create-class" method="POST">
                     <fieldset>
                         <legend>Seus dados</legend>
 
@@ -61,25 +56,26 @@
                         </div>
                     </fieldset>
 
-                    <div class="select-block">
-                        <fieldset>
-                              <label for="subject">Especialização</label>
+                    <fieldset>
+                        <legend>Especialização</legend>
+                        <div class="select-block">
+                            <label for="subject">Corte</label>
                             <select name="subject" id="subject" required>
                                 {% for subject in subjects %}
-                                <option value="{{loop.index}}"> 
-                                 {{subject}}
+                                <option value="{{loop.index}}">
+                                    {{subject}}
+                                </option>
                                 {% endfor %}
                             </select>
-                    
+                        </div>
 
-
-                            <div class="input-block">
-                                <label for="cost">Custo do corte <small>R$</small></label>
-                                <input type="cost" id="cost" type="number">
-                            </div>
-                        </fieldset>
-                    </div>
-
+                        <div class="input-block">
+                            <label for="cost">Custo da sua hora/aula
+                                <small>(R$)</small>
+                            </label>
+                            <input name="cost" id="cost" type="number">
+                        </div>
+                    </fieldset>
 
                     <fieldset id="schedule-items">
                         <legend>Hórarios disponiveis
@@ -92,17 +88,9 @@
 
                                     {% for weekday in weekdays %}
                                     <option value="{{loop.index0}}">
-                                     {{weekday}}
-                                    {% endfor %}
-                                    </option>
+                                        {{weekday}}
+                                        {% endfor %}
 
-                                    <option value="0">Domingo</option>
-                                    <option value="1">Segunda-feira</option>
-                                    <option value="2">Terça-feira</option>
-                                    <option value="3">Quarta-feira</option>
-                                    <option value="4">Quinta-feira</option>
-                                    <option value="5">Sexta-feira</option>
-                                    <option value="6">Sábado</option>
                                 </select>
                             </div>
 
