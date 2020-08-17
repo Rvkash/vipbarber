@@ -1,8 +1,8 @@
 module.exports = async function(db, { barberValue, classValue, classScheduleValues }) {
 
-    // Inserir dados na tabela proffys
-    const insertedProffy = await db.run(`
-        INSERT INTO barber (
+    // Inserir dados na tabela barbers
+    const insertedBarber = await db.run(`
+        INSERT INTO barbers (
           name,
           avatar,
           whatsapp,
@@ -23,7 +23,7 @@ module.exports = async function(db, { barberValue, classValue, classScheduleValu
         INSERT INTO classes (
           subject,
           cost,
-          proffy_id
+          barber_id
         ) VALUES (
           "${classValue.subject}",
           "${classValue.cost}",
