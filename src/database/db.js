@@ -2,7 +2,7 @@ const Database = require('sqlite-async')
 
 function execute (db) {
   return db.exec(`
-      CREATE TABLE IF NOT EXISTS barber (
+      CREATE TABLE IF NOT EXISTS barbers (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT, 
         avatar TEXT,
