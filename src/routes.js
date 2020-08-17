@@ -1,12 +1,18 @@
-const express = require('express')
-const BarberController = require('./controllers/BarberController')
+const {
+    inicio,
+    agendar,
+    cadastro,
+    saveClasses
+} = require('./pages')
 
+const express = require('express')
 const routes = express.Router()
 
 // Routes
 
-routes.get('/', BarberController.inicio)
-routes.get('/agendar', BarberController.agendar)
-routes.get('/cadastro', BarberController.cadastro)
+routes.get('/', inicio)
+routes.get('/agendar', agendar)
+routes.get('/cadastro', cadastro)
+routes.post('/save-classes', saveClasses)
 
 module.exports = routes
