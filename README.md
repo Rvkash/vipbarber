@@ -18,6 +18,19 @@ O projeto está desenvolvido utilizando as seguintes tecnologias:
 - Nunjucks 
 - SQLite 
 
+## ⌨ Como executar o projeto
+```bash
+# Clonar o repositório
+git clone https://github.com/Rvkash/vipbarber
+# Entrar no diretório
+cd vipbarber
+# Baixar as dependências
+npm install
+# Executar o servidor
+npm start
+```
+Feito isso, abra o seu navegador e acesse `http://localhost:5500/`
+
 
 
 Feito com :blue_heart: por [Rafael Linhares](https://www.linkedin.com/in/rafael-linhares-js/)
